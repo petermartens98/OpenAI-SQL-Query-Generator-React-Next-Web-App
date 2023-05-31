@@ -1,4 +1,4 @@
-# OpenAI-SQL-Query-Generator
+# OpenAI SQL Query Generator React Next Web App
 ## Overall Description
 ## File Descritions
 ### .env - add in your openAI API Keys here
