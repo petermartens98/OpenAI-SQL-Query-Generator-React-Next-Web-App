@@ -1,0 +1,159 @@
+* {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: rgb(34,34,34);
+}
+
+body {
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-color: rgb(250,250,250);
+}
+
+p, input {
+    font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(53, 53, 53);
+}
+
+.app {
+    height:80vh;
+    width:80vw;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.16) 0 1px 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.code-display {
+    width: 96%;
+    margin:2%;
+    height:46%;
+    border-radius: 8px;
+    background-color: rgb(34, 34, 34);
+    overflow: hidden;
+}
+
+.code-output {
+    margin: 20px;
+}
+
+.code-output p{
+    color: rgb(255, 189, 45)
+}
+
+
+.buttons {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(50,50,50);
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.button.first {
+    background-color: rgb(255, 96, 86)
+}
+
+
+.button.middle {
+    background-color: rgb(255,189,45);
+}
+
+.button.last {
+    background-color: rgb(38,201,64);
+}
+
+.messages-display {
+    width: 96%;
+    margin:2%;
+    height:46%;
+    overflow-y:scroll;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(85, 85, 85, 0.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.message-display {
+    width:100%;
+    display: flex;
+    border-radius:5px;
+    box-sizing: border-box;
+    background-color: rgb(250,250,250);
+    margin:5px 0;
+}
+
+p#icon {
+    padding: 0 7px;
+}
+
+input {
+    margin:2%;
+    padding: 16px;
+    border: solid rgba(0,0,0,0.16) 1px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: rgb(54, 204, 241);
+    outline: none;
+}
+
+.button-container {
+    margin: 2%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-container button {
+    text-transform: uppercase;
+    padding: 7px;
+    border:none;
+    cursor: pointer;
+}
+
+button#get-query {
+    border-radius: 10px 0 0 10px;
+    background-color: rgb(38,201,64);
+}
+
+button#clear-chat {
+    border-radius:  0 10px 10px 0;
+    background-color: rgb(255,189,45);
+}
+
+button:hover {
+    filter:brightness(0.9);
+}
+
+button:active{
+    transform: scale(0.95);
+    filter: brightness(0.8);
+}
